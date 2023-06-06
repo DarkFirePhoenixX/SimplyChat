@@ -1,0 +1,275 @@
+* {
+  text-shadow: 3px 3px 3px black;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  font-size: 1rem;
+  cursor: url("cursor.png"), auto;
+}
+
+body {
+  background-image: url("../resources/body_background.jpg");
+  background-position: top;
+  background-color: #212121;
+  margin: 20px auto;
+  font-family: "Lato";
+  font-weight: 300;
+}
+
+html {
+  height: 100%;
+}
+
+form {
+  padding: 15px 25px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+form label {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+input {
+  background-image: url("../resources/chatbox_background.jpg");
+  background-position: left;
+  font-family: "Lato";
+}
+
+a {
+  color: #0000ff;
+  text-decoration: none;
+  cursor: url("hand.png"), auto;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#wrapper,
+#loginform {
+  margin: 0 auto;
+  padding-bottom: 25px;
+  background: #eee;
+  width: 700px;
+  max-width: 100%;
+  border: 2px solid #0ef0f4;
+  border-radius: 4px;
+  background-color: #a7a7a7;
+  background-image: url("../resources/chat_background.jpg");
+  background-position: center;
+}
+
+#loginform {
+  background-image: url("../resources/chat_background.jpg");
+  background-position: center;
+  background-color: #a7a7a7;
+  padding-top: 18px;
+  text-align: center;
+}
+
+#loginform p {
+  padding: 15px 25px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#chatbox {
+  text-align: left;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  padding: 10px;
+  background: #fff;
+  height: 300px;
+  width: 630px;
+  border: 1px solid #0efbff;
+  overflow: auto;
+  border-radius: 4px;
+  border-bottom: 2px solid #0efbff;
+  background-image: url("../resources/chatbox_background.jpg");
+  background-position: left;
+}
+
+#usermsg {
+  height: 65px;
+  flex: 1;
+  border-radius: 4px;
+  border: 1px solid #00f7ff;
+  resize: none;
+  background-image: url("../resources/chatbox_background.jpg");
+  background-position: left;
+}
+
+#name {
+  border-radius: 4px;
+  border: 1px solid #414141;
+  padding: 2px 8px;
+}
+
+#submitmsg,
+#submitfile,
+#enter {
+  background: #0aa8a8;
+  border: 2px solid #00f7ff;
+  color: white;
+  padding: 4px 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: url("hand.png"), auto;
+}
+#submitmsg:hover,
+#submitfile:hover,
+#enter:hover{
+  background: #055757;
+}
+#submitmsg:active,
+#submitfile:active,
+#enter:active {
+  background-color: #000000; 
+  box-shadow: 0 5px #c0c0c0;
+  transform: translateY(4px);
+}
+
+.exit_yes_hover{
+  background: #000000 !important;
+  box-shadow: 0 5px #c0c0c0;
+  transform: translateY(4px);
+}
+
+.error {
+  color: #ff0000;
+}
+
+#menu {
+  padding: 15px 25px;
+  display: flex;
+}
+
+#menu p.welcome {
+  flex: 1;
+}
+
+a#exit {
+  border: 2px solid #00f7ff;
+  color: white;
+  background: #0d8a93;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+}
+a#exit:hover{
+  background: #055757;
+}
+a#exit:active{
+  background-color: #000000; 
+  box-shadow: 0 5px #c0c0c0;
+  transform: translateY(4px);
+}
+
+.msgln {
+  margin: 0 0 5px 0;
+}
+
+.msgln span.left-info {
+  color: rgb(14, 255, 191);
+}
+
+.msgln span.chat-time {
+  color: #cec3c3;
+  font-size: 60%;
+  vertical-align: super;
+}
+
+.msgln b.user-name,
+.msgln b.user-name-left {
+  font-weight: bold;
+  background: #546e7a;
+  color: white;
+  padding: 2px 4px;
+  font-size: 90%;
+  border-radius: 4px;
+  margin: 0 5px 0 0;
+}
+
+.scrollbar-colored {
+  scrollbar-color: rgb(0, 255, 229) rgba(12, 124, 112, 0.526);
+  overflow-y: scroll;
+}
+
+.logo {
+  -webkit-filter: drop-shadow(3px 3px 0 black);
+  filter: drop-shadow(3px 3px 0px black);
+}
+
+.logotext {
+  background: linear-gradient(to right, #58ecfd 0%, #1869ff 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none !important;
+  filter: drop-shadow(3px 3px 0 black);
+}
+
+#exit_yes,#exit_ok,#delete_yes{
+  border: 2px solid #00f7ff;
+  color: white;
+  background: #0d8a93;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: url("hand.png"), auto;
+}
+
+#exit_no,#delete_no{
+  border: 2px solid #00f7ff;
+  color: white;
+  background: #094449;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: url("hand.png"), auto;
+}
+
+#exit_yes:hover,#exit_ok:hover,#delete_yes:hover{
+  background: #055757;
+}
+
+#exit_yes:active,#exit_ok:active,#delete_yes:active{
+  background-color: #000000; 
+  box-shadow: 0 5px #c0c0c0;
+  transform: translateY(4px);
+}
+
+#exit_no:hover,#delete_no:hover{
+  background: #052c2c;
+}
+
+#exit_no:active,#delete_no:active{
+  background-color: #000000; 
+  box-shadow: 0 5px #c0c0c0;
+  transform: translateY(4px);
+}
+
+.exit-modal{
+  margin-top: 25%;
+  background-image: url("../resources/chatbox_background.jpg");
+}
+
+.help-modal{
+  margin-top: 10%;
+  background-image: url("../resources/chatbox_background.jpg");
+}
+
+.upload_text,#fileToUpload{
+  color: white;
+  cursor: url("hand.png"), auto;
+}
+
+.upload_text:hover,#fileToUpload:hover{
+  background-color: #05575778;
+  color: rgb(0, 119, 255);
+}
